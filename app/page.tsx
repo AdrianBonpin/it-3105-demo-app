@@ -74,7 +74,6 @@ export default function LandingPage() {
     // Fetch on Load
     useEffect(() => {
         getImages()
-        console.log(images)
     }, [])
 
     return (

@@ -1,3 +1,5 @@
+export const revalidate = 0
+
 import { list } from "@vercel/blob";
 
 export async function GET(req: Request) {
