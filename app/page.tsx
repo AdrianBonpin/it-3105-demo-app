@@ -81,26 +81,26 @@ export default function LandingPage() {
             <h1 className='text-3xl font-bold'>Photo Upload</h1>
             <button
                 type='button'
-                className='flex gap-2 font-semibold text-lg items-center justify-center bg-gray-800 py-2 px-3 rounded-md capitalize transition-colors hover:bg-gray-700 active:bg-gray-500 w-max'
+                className='flex gap-2 font-semibold text-sm sm:text-lg items-center justify-center bg-gray-800 py-2 px-3 rounded-md capitalize transition-colors hover:bg-gray-700 active:bg-gray-500 w-max'
                 onClick={getImages}
             >
                 <RefreshCwIcon size={18} /> Refresh
             </button>
             <form
-                className='flex gap-4'
+                className='flex gap-4 flex-wrap w-full'
                 onSubmit={handleSumbit}
-            >
+            >   
                 <button
                     type='submit'
                     disabled={upload}
-                    className='flex gap-2 font-semibold text-lg items-center justify-center bg-gray-800 py-2 px-3 rounded-md capitalize transition-colors hover:bg-gray-700 active:bg-gray-500 w-max'
+                    className='flex gap-2 font-semibold text-sm sm:text-lg items-center justify-center bg-gray-800 py-2 px-3 rounded-md capitalize transition-colors hover:bg-gray-700 active:bg-gray-500 w-max'
                 >
                     <UploadIcon size={18} /> {status}
                 </button>
                 <input
                     type='file'
                     aria-label='Upload'
-                    className='text-lg font-semibold bg-gray-800 flex items-center justify-center py-2 px-3 rounded-md'
+                    className='text-sm sm:text-lg font-semibold bg-gray-800 flex items-center justify-center py-2 px-3 rounded-md'
                     ref={fileRef}
                     required
                 />
